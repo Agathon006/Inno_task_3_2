@@ -232,7 +232,7 @@ button {
 }
 
 .nav-section {
-  padding: 10px 30px;
+  padding: 10px 30px 10px 30px;
   max-width: 220px;
   flex-shrink: 0;
   display: flex;
@@ -368,6 +368,122 @@ button {
   display: flex;
   align-items: center;
   text-decoration: none;
+}
+
+.channel-banner {
+  padding: 0 70px 0 0;
+  display: flex;
+  flex-direction: column;
+}
+.channel-banner .channel-banner__img {
+  width: 100%;
+  height: 280px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 14px;
+}
+@media (max-width: 768px) {
+  .channel-banner .channel-banner__img {
+    border-radius: 0px;
+  }
+}
+.channel-banner .channel-banner__wrapper {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.channel-banner .channel-banner__wrapper .channel-banner__author-part {
+  display: flex;
+}
+.channel-banner .channel-banner__wrapper .channel-banner__author-part .channel-banner__author-part-first {
+  margin-right: 14px;
+}
+.channel-banner .channel-banner__wrapper .channel-banner__author-part .channel-banner__author-part-first .channel-banner__author-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+}
+@media (max-width: 768px) {
+  .channel-banner .channel-banner__wrapper .channel-banner__author-part .channel-banner__author-part-first .channel-banner__author-photo {
+    width: 70px;
+    height: 70px;
+  }
+}
+@media (max-width: 768px) {
+  .channel-banner .channel-banner__wrapper .channel-banner__author-part .channel-banner__author-part-first {
+    margin-bottom: 2px;
+  }
+}
+.channel-banner .channel-banner__wrapper .channel-banner__author-part .channel-banner__author-part-second {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.channel-banner .channel-banner__wrapper .channel-banner__author-part .channel-banner__author-part-second .channel-banner__author-name {
+  font-family: "Mulish";
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 33px;
+  color: #19202c;
+}
+@media (max-width: 768px) {
+  .channel-banner .channel-banner__wrapper .channel-banner__author-part .channel-banner__author-part-second .channel-banner__author-name {
+    margin-bottom: 4px;
+  }
+}
+.channel-banner .channel-banner__wrapper .channel-banner__author-part .channel-banner__author-part-second .channel-banner__subs-number {
+  font-family: "Mulish";
+  font-size: 13px;
+  line-height: 16px;
+  color: #c2c2c2;
+}
+@media (max-width: 768px) {
+  .channel-banner .channel-banner__wrapper .channel-banner__author-part {
+    flex-direction: column;
+  }
+}
+.channel-banner .channel-banner__wrapper .channel-banner__subscribe-part {
+  display: flex;
+  align-items: flex-start;
+}
+.channel-banner .channel-banner__wrapper .channel-banner__subscribe-part .channel-banner__btn-bell {
+  margin: 9px 20px 0 0;
+  width: 22px;
+  height: 26px;
+  background: url("../../assets/icons/bell.svg") no-repeat center;
+}
+@media (max-width: 768px) {
+  .channel-banner .channel-banner__wrapper .channel-banner__subscribe-part .channel-banner__btn-bell {
+    display: none;
+  }
+}
+.channel-banner .channel-banner__wrapper .channel-banner__subscribe-part .channel-banner__subscribe-btn {
+  font-family: "Mulish";
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #ff0000;
+  border: none;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .channel-banner .channel-banner__wrapper .channel-banner__subscribe-part {
+    padding-top: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .channel-banner .channel-banner__wrapper {
+    flex-direction: column;
+    margin-top: -35px;
+    margin-left: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .channel-banner {
+    padding: 0;
+  }
 }
 
 .videos-section {
@@ -512,12 +628,11 @@ button {
   flex-grow: 1;
   padding-block: 20px 30px;
   display: flex;
-  -moz-column-gap: 25px;
-       column-gap: 25px;
+  justify-content: space-between;
 }
 @media (max-width: 768px) {
   .main {
-    padding: 20px;
+    padding: 0px;
   }
 }
 @media (max-width: 480px) {
@@ -525,17 +640,27 @@ button {
     padding: 10px 16px 77px;
   }
 }
-.main__main-content-section {
-  padding: 10px 0 0 10px;
+.main__not-aside-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: calc(100vw - 220px);
+}
+.main__not-aside-wrapper .main__main-content-section {
+  padding: 10px 0 0 0;
   overflow-x: auto;
 }
 @media (max-width: 768px) {
-  .main__main-content-section {
+  .main__not-aside-wrapper .main__main-content-section {
     padding: 0;
   }
 }
 @media (max-width: 480px) {
-  .main__main-content-section {
+  .main__not-aside-wrapper .main__main-content-section {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .main__not-aside-wrapper {
     width: 100%;
   }
 }
