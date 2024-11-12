@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./assets/icons/youtube.ico" />
+    <link rel="stylesheet" href="./styles/reset/reset.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <title>YouTube Redesign Concept</title>
+    <script src="./scripts/index.js" type="module" defer></script>
+  </head>
+  <body>
+    <div class="global-wrapper">
+      <header class="header">
+        <div class="header__left-wrapper">
+          <button class="header__burger-btn" id="burger-btn"></button>
+          <a
+            href="https://www.youtube.com/"
+            target="_blank"
+            class="header__youtube-link"
+          ></a>
+          <div class="header__search-input-wrapper">
+            <input
+              type="search"
+              name="video-search"
+              placeholder="Search"
+              class="header__search-input"
+            />
+            <button class="header__input-search-btn"></button>
+          </div>
+        </div>
+        <div class="header__right-wrapper">
+          <div class="header__btns-wrapper">
+            <button class="header__btn-camera"></button>
+            <button class="header__btn-nine-dots"></button>
+            <button class="header__btn-bell">
+              <span class="header__bell-notifications">3</span>
+            </button>
+          </div>
+          <button class="header__btn-search"></button>
+          <button class="header__btn-profile"></button>
+        </div>
+      </header>
+      <main class="main">
+        <aside class="nav-section">
+          <nav class="nav-section__main-nav">
+            <ul class="nav-section__main-nav-list">
+              <li class="nav-section__nav-list-item">
+                <a href="#" class="nav-section__link">
+                  <div class="nav-section__icon-img-wrapper">
+                    <img
+                      src="./assets/icons/home.svg"
+                      alt="home"
+                      class="nav-section__link-icon-img nav-section__link-icon-img_home"
+                    />
+                  </div>
+                  <span
+                    class="nav-section__link-text nav-section__link-text_active"
+                    data-hide
+                  >
+                    Home
+                  </span>
+                </a>
+              </li>
+              <li
+                class="nav-section__nav-list-item nav-section__nav-list-item_trending"
+              >
+                <a href="#" class="nav-section__link">
+                  <div class="nav-section__icon-img-wrapper">
+                    <img
+                      src="./assets/icons/trending.svg"
+                      alt="trending"
+                      class="nav-section__link-icon-img nav-section__link-icon-img_trending"
+                    />
+                  </div>
+                  <span class="nav-section__link-text" data-hide>Trending</span>
+                </a>
+              </li>
+              <li class="nav-section__nav-list-item">
+                <a href="#" class="nav-section__link">
+                  <div class="nav-section__icon-img-wrapper">
+                    <img
+                      src="./assets/icons/subscriptions.svg"
+                      alt="subscriptions"
+                      class="nav-section__link-icon-img nav-section__link-icon-img_subscriptions"
+                    />
+                  </div>
+                  <span class="nav-section__link-text" data-hide
+                    >Subscriptions</span
+                  >
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <nav class="nav-section__secondary-nav">
+            <ul class="nav-section__secondary-nav-list">
+              <li class="nav-section__nav-list-item">
+                <a href="#" class="nav-section__link">
+                  <div class="nav-section__icon-img-wrapper">
+                    <img
+                      src="./assets/icons/library.svg"
+                      alt="library"
+                      class="nav-section__link-icon-img nav-section__link-icon-img_library"
+                    />
+                  </div>
+                  <span class="nav-section__link-text" data-hide>Library</span>
+                </a>
+              </li>
+              <li class="nav-section__nav-list-item">
+                <a href="#" class="nav-section__link">
+                  <div class="nav-section__icon-img-wrapper">
+                    <img
+                      src="./assets/icons/history.svg"
+                      alt="history"
+                      class="nav-section__link-icon-img nav-section__link-icon-img_history"
+                    />
+                  </div>
+                  <span class="nav-section__link-text" data-hide>History</span>
+                </a>
+              </li>
+              <li class="nav-section__nav-list-item">
+                <a href="#" class="nav-section__link">
+                  <div class="nav-section__icon-img-wrapper">
+                    <img
+                      src="./assets/icons/watch-later.svg"
+                      alt="watch later"
+                      class="nav-section__link-icon-img nav-section__link-icon-img_watch-later"
+                    />
+                  </div>
+                  <span class="nav-section__link-text" data-hide
+                    >Watch later</span
+                  >
+                </a>
+              </li>
+              <li class="nav-section__nav-list-item">
+                <a href="#" class="nav-section__link">
+                  <div class="nav-section__icon-img-wrapper">
+                    <img
+                      src="./assets/icons/favourites.svg"
+                      alt="favourites"
+                      class="nav-section__link-icon-img nav-section__link-icon-img_favourites"
+                    />
+                  </div>
+                  <span class="nav-section__link-text" data-hide
+                    >Favourites</span
+                  >
+                </a>
+              </li>
+              <li class="nav-section__nav-list-item">
+                <a href="#" class="nav-section__link">
+                  <div class="nav-section__icon-img-wrapper">
+                    <img
+                      src="./assets/icons/liked-videos.svg"
+                      alt="liked videos"
+                      class="nav-section__link-icon-img nav-section__link-icon-img_liked-videos"
+                    />
+                  </div>
+                  <span class="nav-section__link-text" data-hide
+                    >Liked videos</span
+                  >
+                </a>
+              </li>
+              <li class="nav-section__nav-list-item">
+                <a href="#" class="nav-section__link">
+                  <div class="nav-section__icon-img-wrapper">
+                    <img
+                      src="./assets/icons/music.svg"
+                      alt="music"
+                      class="nav-section__link-icon-img nav-section__link-icon-img_music"
+                    />
+                  </div>
+                  <span class="nav-section__link-text" data-hide>Music</span>
+                </a>
+              </li>
+              <li class="nav-section__nav-list-item">
+                <a href="#" class="nav-section__link">
+                  <div class="nav-section__icon-img-wrapper">
+                    <img
+                      src="./assets/icons/games.svg"
+                      alt="games"
+                      class="nav-section__link-icon-img nav-section__link-icon-img_games"
+                    />
+                  </div>
+                  <span class="nav-section__link-text" data-hide>Games</span>
+                </a>
+              </li>
+              <li class="nav-section__nav-list-item">
+                <a href="#" class="nav-section__link">
+                  <div class="nav-section__icon-img-wrapper">
+                    <img
+                      src="./assets/icons/show-more.svg"
+                      alt="show more"
+                      class="nav-section__link-icon-img nav-section__link-icon-img_show-more"
+                    />
+                  </div>
+                  <span class="nav-section__link-text" data-hide
+                    >Show more</span
+                  >
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <nav class="nav-section__subscriptions-nav" data-hide>
+            <h3 class="nav-section__subscriptions-headline">Subscriptions</h3>
+            <ul class="nav-section__subscriptions-nav-list">
+              <li
+                class="nav-section__nav-list-item nav-section__nav-list-item_person"
+              >
+                <a href="#" class="nav-section__link">
+                  <img
+                    src="./assets/images/gussie-singleton.png"
+                    alt="Gussie Singleton"
+                    class="nav-section__link-img"
+                  />
+                  <span class="nav-section__link-text">Gussie Singleton</span>
+                </a>
+              </li>
+              <li
+                class="nav-section__nav-list-item nav-section__nav-list-item_person"
+              >
+                <a href="#" class="nav-section__link">
+                  <img
+                    src="./assets/images/nora-francis.png"
+                    alt="Nora Francis"
+                    class="nav-section__link-img"
+                  />
+                  <span class="nav-section__link-text">Nora Francis</span>
+                </a>
+              </li>
+              <li
+                class="nav-section__nav-list-item nav-section__nav-list-item_person"
+              >
+                <a href="#" class="nav-section__link">
+                  <img
+                    src="./assets/images/belle-briggs.png"
+                    alt="Belle Briggs"
+                    class="nav-section__link-img"
+                  />
+                  <span class="nav-section__link-text">Belle Briggs</span>
+                </a>
+              </li>
+              <li
+                class="nav-section__nav-list-item nav-section__nav-list-item_person"
+              >
+                <a href="#" class="nav-section__link">
+                  <img
+                    src="./assets/images/eunice-cortez.png"
+                    alt="Eunice Cortez"
+                    class="nav-section__link-img"
+                  />
+                  <span class="nav-section__link-text">Eunice Cortez</span>
+                </a>
+              </li>
+              <li
+                class="nav-section__nav-list-item nav-section__nav-list-item_person"
+              >
+                <a href="#" class="nav-section__link">
+                  <img
+                    src="./assets/images/emma-hanson.png"
+                    alt="Emma Hanson"
+                    class="nav-section__link-img"
+                  />
+                  <span class="nav-section__link-text">Emma Hanson</span>
+                </a>
+              </li>
+              <li
+                class="nav-section__nav-list-item nav-section__nav-list-item_person"
+              >
+                <a href="#" class="nav-section__link">
+                  <img
+                    src="./assets/images/leah-berry.png"
+                    alt="Leah Berry"
+                    class="nav-section__link-img"
+                  />
+                  <span class="nav-section__link-text">Leah Berry</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <a href="#" class="nav-section__settings-wrapper">
+            <div class="nav-section__icon-img-wrapper">
+              <img
+                src="./assets/icons/settings.svg"
+                alt="settings"
+                class="nav-section__link-icon-img nav-section__link-icon-img_settings"
+              />
+            </div>
+            <span
+              class="nav-section__link-text nav-section__link-text_light"
+              data-hide
+            >
+              Setting
+            </span>
+          </a>
+        </aside>
+        <div class="main__main-content-section">
+          <section class="videos-section">
+            <div class="videos-section__btns-wrapper">
+              <div class="videos-section__arrow-btns-wrapper">
+                <button class="arrow-btn arrow-btn_left"></button>
+                <button class="arrow-btn arrow-btn_right"></button>
+              </div>
+            </div>
+            <div class="videos-section__headline-wrapper">
+              <span class="videos-section__channel-text">Margaret Phelps videos</span>
+            </div>
+            <div class="videos-section__videos-block-wrapper">
+              <div class="videos-section__videos-wrapper">
+                <div class="small-video-card">
+                  <div class="small-video-card__img-wrapper">
+                    <span class="time-label">7:36</span>
+                    <img
+                      src="./assets/images/astronomy-or-astrology.png"
+                      alt="Astronomy Or Astrology"
+                      class="small-video-card__img"
+                    />
+                  </div>
+                  <h3 class="small-video-card__video-headline">
+                    Astronomy Or Astrology
+                  </h3>
+                  <div class="small-video-card__additional-info-wrapper">
+                    <div class="small-video-card__views-date-wrapper">
+                      <span class="small-video-card__text-views"
+                        >240k views</span
+                      >
+                      <div class="gray-dot-separator"></div>
+                      <span class="small-video-card__text-date">
+                        4 months ago
+                      </span>
+                    </div>
+                    <span class="small-video-card__text-author">
+                      Food & Drink
+                    </span>
+                  </div>
+                </div>
+                <div class="small-video-card">
+                  <div class="small-video-card__img-wrapper">
+                    <span class="time-label">2:19</span>
+                    <img
+                      src="./assets/images/advertising-outdoors.png"
+                      alt="Advertising Outdoors"
+                      class="small-video-card__img"
+                    />
+                  </div>
+                  <h3 class="small-video-card__video-headline">
+                    Advertising Outdoors
+                  </h3>
+                  <div class="small-video-card__additional-info-wrapper">
+                    <div class="small-video-card__views-date-wrapper">
+                      <span class="small-video-card__text-views"
+                        >13k views</span
+                      >
+                      <div class="gray-dot-separator"></div>
+                      <span class="small-video-card__text-date">
+                        15 days ago
+                      </span>
+                    </div>
+                    <span class="small-video-card__text-author">
+                      Food & Drink
+                    </span>
+                  </div>
+                </div>
+                <div class="small-video-card">
+                  <div class="small-video-card__img-wrapper">
+                    <span class="time-label">9:05</span>
+                    <img
+                      src="./assets/images/radio-astronomy.png"
+                      alt="Radio Astronomy"
+                      class="small-video-card__img"
+                    />
+                  </div>
+                  <h3 class="small-video-card__video-headline">
+                    Radio Astronomy
+                  </h3>
+                  <div class="small-video-card__additional-info-wrapper">
+                    <div class="small-video-card__views-date-wrapper">
+                      <span class="small-video-card__text-views">1k views</span>
+                      <div class="gray-dot-separator"></div>
+                      <span class="small-video-card__text-date">
+                        11 months ago
+                      </span>
+                    </div>
+                    <span class="small-video-card__text-author">
+                      Food & Drink
+                    </span>
+                  </div>
+                </div>
+                <div class="small-video-card">
+                  <div class="small-video-card__img-wrapper">
+                    <span class="time-label">3:40</span>
+                    <img
+                      src="./assets/images/a-good-autoresponder.png"
+                      alt="A Good Autoresponder"
+                      class="small-video-card__img"
+                    />
+                  </div>
+                  <h3 class="small-video-card__video-headline">
+                    A Good Autoresponder
+                  </h3>
+                  <div class="small-video-card__additional-info-wrapper">
+                    <div class="small-video-card__views-date-wrapper">
+                      <span class="small-video-card__text-views">
+                        45k views
+                      </span>
+                      <div class="gray-dot-separator"></div>
+                      <span class="small-video-card__text-date">
+                        2 months ago
+                      </span>
+                    </div>
+                    <span class="small-video-card__text-author">
+                      Food & Drink
+                    </span>
+                  </div>
+                </div>
+                <div class="small-video-card">
+                  <div class="small-video-card__img-wrapper">
+                    <span class="time-label">1:56</span>
+                    <img
+                      src="./assets/images/baby-monitor-technology.png"
+                      alt="Baby Monitor Technology"
+                      class="small-video-card__img"
+                    />
+                  </div>
+                  <h3 class="small-video-card__video-headline">
+                    Baby Monitor Technology
+                  </h3>
+                  <div class="small-video-card__additional-info-wrapper">
+                    <div class="small-video-card__views-date-wrapper">
+                      <span class="small-video-card__text-views">
+                        86k views
+                      </span>
+                      <div class="gray-dot-separator"></div>
+                      <span class="small-video-card__text-date">
+                        7 days ago
+                      </span>
+                    </div>
+                    <span class="small-video-card__text-author">
+                      Food & Drink
+                    </span>
+                  </div>
+                </div>
+                <div class="small-video-card">
+                  <div class="small-video-card__img-wrapper">
+                    <span class="time-label">4:15</span>
+                    <img
+                      src="./assets/images/asteroids-watermelon.png"
+                      alt="Asteroids"
+                      class="small-video-card__img"
+                    />
+                  </div>
+                  <h3 class="small-video-card__video-headline">Asteroids</h3>
+                  <div class="small-video-card__additional-info-wrapper">
+                    <div class="small-video-card__views-date-wrapper">
+                      <span class="small-video-card__text-views">
+                        123k views
+                      </span>
+                      <div class="gray-dot-separator"></div>
+                      <span class="small-video-card__text-date">
+                        4 months ago
+                      </span>
+                    </div>
+                    <span class="small-video-card__text-author">
+                      Dollie Blair
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer class="footer">
+        <nav class="footer__nav">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-list-item footer__nav-list-item_home">
+              <a href="#" class="footer__link">
+                <div class="footer__link-img-wrapper">
+                  <img
+                    src="./assets/icons/home.svg"
+                    alt="home"
+                    class="footer__link-img footer__link-img_home"
+                  />
+                </div>
+                <span class="footer__link-text footer__link-text_red">
+                  Home
+                </span>
+              </a>
+            </li>
+            <li class="footer__nav-list-item footer__nav-list-item_trending">
+              <a href="#" class="footer__link">
+                <div class="footer__link-img-wrapper">
+                  <img
+                    src="./assets/icons/trending.svg"
+                    alt="trending"
+                    class="footer__link-img footer__link-img_trending"
+                  />
+                </div>
+                <span class="footer__link-text">Trending</span>
+              </a>
+            </li>
+            <li
+              class="footer__nav-list-item footer__nav-list-item_subscriptions"
+            >
+              <a href="#" class="footer__link">
+                <div class="footer__link-img-wrapper">
+                  <img
+                    src="./assets/icons/subscriptions.svg"
+                    alt="subscriptions"
+                    class="footer__link-img footer__link-img_subscriptions"
+                  />
+                </div>
+                <span class="footer__link-text">Subscriptions</span>
+              </a>
+            </li>
+            <li class="footer__nav-list-item footer__nav-list-item_library">
+              <a href="#" class="footer__link">
+                <div class="footer__link-img-wrapper">
+                  <img
+                    src="./assets/icons/library.svg"
+                    alt="library"
+                    class="footer__link-img footer__link-img_library"
+                  />
+                </div>
+                <span class="footer__link-text">Library</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
+  </body>
+</html>

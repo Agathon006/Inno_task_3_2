@@ -1,0 +1,54 @@
+@import "../../assets/fonts/Mulish-Bold/font-mulish-bold.css";
+@import "../../assets/fonts/Mulish-Regular/font-mulish-regular.css";
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.global-wrapper {
+  min-height: 100vh;
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.arrow-btn {
+  width: 28px;
+  height: 28px;
+  border: none;
+  cursor: pointer;
+
+  &_left {
+    background: url("../../assets/icons/left-arrow.svg") no-repeat center;
+  }
+  
+  &_right {
+    background: url("../../assets/icons/right-arrow.svg") no-repeat center;
+  }
+}
+
+.time-label {
+  font-family: "Mulish";
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 47px;
+  height: 24px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(#000000, 0.3);
+}
+
+.gray-dot-separator {
+  width: 1px;
+  height: 1px;
+  background-color: #c2c2c2;
+}

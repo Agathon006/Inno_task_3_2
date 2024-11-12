@@ -1,0 +1,156 @@
+.nav-section {
+  padding: 10px 30px;
+  max-width: 220px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+
+  &__main-nav {
+    margin-bottom: 60px;
+
+    .nav-section__main-nav-list {
+      display: flex;
+      flex-direction: column;
+      row-gap: 28px;
+    }
+  }
+
+  &__secondary-nav {
+    margin-bottom: 58px;
+
+    .nav-section__secondary-nav-list {
+      display: flex;
+      flex-direction: column;
+      row-gap: 29px;
+    }
+  }
+
+  &__nav-list-item {
+    height: 20px;
+
+    &_trending {
+      height: 21px;
+    }
+
+    &_person {
+      height: 26px;
+    }
+
+    .nav-section__link {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    }
+  }
+
+  &__icon-img-wrapper {
+    margin-right: 12px;
+    width: 22px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .nav-section__link-icon-img {
+      &_home {
+        width: 20px;
+        height: 19px;
+      }
+      &_trending {
+        width: 16px;
+        height: 21px;
+      }
+      &_subscriptions {
+        width: 18px;
+        height: 18px;
+      }
+      &_library {
+        width: 20px;
+        height: 16px;
+      }
+      &_history {
+        width: 20px;
+        height: 18px;
+      }
+      &_watch-later {
+        width: 17px;
+        height: 19px;
+      }
+      &_favourites {
+        width: 19px;
+        height: 18px;
+      }
+      &_liked-videos {
+        width: 18px;
+        height: 17px;
+      }
+      &_music {
+        width: 18px;
+        height: 20px;
+      }
+      &_games {
+        width: 22px;
+        height: 16px;
+      }
+      &_show-more {
+        width: 14px;
+        height: 8px;
+      }
+      &_settings {
+        width: 19px;
+        height: 20px;
+      }
+    }
+  }
+
+  &__link-img {
+    margin-right: 10px;
+    width: 26px;
+    height: 26px;
+    border-radius: 100%;
+  }
+
+  &__link-text {
+    font-family: "Mulish";
+    font-size: 16px;
+    line-height: 20px;
+    color: #898989;
+
+    &_active {
+      color: #ff0000;
+    }
+
+    &_light {
+      color: #c2c2c2;
+    }
+  }
+  &__subscriptions-nav {
+    margin-bottom: 104px;
+
+    .nav-section__subscriptions-headline {
+      font-family: "Mulish";
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 23px;
+      color: #000000;
+      margin-bottom: 30px;
+    }
+
+    .nav-section__subscriptions-nav-list {
+      display: flex;
+      flex-direction: column;
+      row-gap: 23px;
+    }
+  }
+
+  &__settings-wrapper {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+}
