@@ -635,6 +635,7 @@ button {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  margin-right: 83px;
 }
 .rec-channels .rec-channels__headline {
   font-family: "Mulish";
@@ -663,6 +664,7 @@ button {
   font-weight: bold;
   line-height: 23px;
   color: #19202c;
+  white-space: nowrap;
 }
 @media (max-width: 1740px) {
   .rec-channels {
@@ -678,7 +680,7 @@ button {
 }
 .videos-section__btns-wrapper {
   position: absolute;
-  top: 16px;
+  top: 0px;
   right: 149px;
   height: 40px;
   display: flex;

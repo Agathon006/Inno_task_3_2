@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
+  margin-right: 83px;
 
   .rec-channels__headline {
     font-family: "Mulish";
@@ -32,6 +33,7 @@
         font-weight: bold;
         line-height: 23px;
         color: #19202c;
+        white-space: nowrap;
       }
     }
   }
