@@ -10,9 +10,11 @@ export default () => {
       if (element.style.display === "none") {
         element.style.display = "block";
         notAsideWrapper.style.width = "calc(100vw - 220px)";
+        notAsideWrapper.style.paddingLeft = "30px";
       } else {
         element.style.display = "none";
         notAsideWrapper.style.width = "calc(100vw - 90px)";
+        notAsideWrapper.style.paddingLeft = "0px";
       }
     });
   });

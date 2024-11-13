@@ -1,0 +1,38 @@
+.rec-channels {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  .rec-channels__headline {
+    font-family: "Mulish";
+    font-size: 16px;
+    line-height: 20px;
+    color: #c2c2c2;
+  }
+
+  .rec-channels__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .rec-channels__list-element {
+      display: flex;
+      align-items: center;
+
+      .rec-channels__list-element-img {
+        margin-right: 20px;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+      }
+
+      .rec-channels__list-element-text {
+        font-family: "Mulish";
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 23px;
+        color: #19202c;
+      }
+    }
+  }
+}

@@ -1,5 +1,5 @@
 .header {
-  padding: 20px 70px 20px 32px;
+  padding: 20px 70px 30px 32px;
   min-height: 84px;
   display: flex;
   justify-content: space-between;
@@ -73,14 +73,6 @@
 
         &::placeholder {
           color: rgba(#30384c, 0.4);
-        }
-
-        &::-webkit-search-cancel-button {
-          -webkit-appearance: none;
-        }
-
-        &::-ms-clear {
-          display: none;
         }
       }
 

@@ -1,0 +1,40 @@
+.channel-navigation {
+  .channel-navigation__list {
+    width: 834px;
+    display: flex;
+    justify-content: space-between;
+
+    .channel-navigation__list-element {
+      position: relative;
+      font-family: "Mulish";
+      font-size: 18px;
+      line-height: 23px;
+      color: #000000;
+
+      .channel-navigation__list-element-btn {
+        width: 19px;
+        height: 19px;
+        background: url("../../../assets/icons/search.svg") no-repeat center;
+      }
+
+      .channel-navigation__list-element-underline {
+        position: absolute;
+        bottom: -3px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60px;
+        height: 2px;
+        background-color: #ff0000;
+      }
+
+      &:first-child {
+        font-weight: bold;
+        color: #ff0000;
+      }
+    }
+  }
+
+  .channel-navigation__content {
+    margin-top: 54px;
+  }
+}

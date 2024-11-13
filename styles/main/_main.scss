@@ -1,11 +1,13 @@
 @import "./navSection/navSection";
 @import "./channelBanner/channelBanner";
+@import "./channelNavigation/channelNavigation";
+@import "./channelRecChannels/channelRecChannels";
 @import "./videosSection/videosSection";
 @import "./smallVideoCard/smallVideoCard";
+@import "./bigVideoCard/bigVideoCard";
 
 .main {
   flex-grow: 1;
-  padding-block: 20px 30px;
   display: flex;
   justify-content: space-between;
 
@@ -21,9 +23,16 @@
     display: flex;
     flex-direction: column;
     width: calc(100vw - 220px);
+    padding-left: 30px;
+
+    .main__main-channel-about {
+      padding: 0 153px 0 0;
+      display: flex;
+      justify-content: space-between;
+    }
 
     .main__main-content-section {
-      padding: 10px 0 0 0;
+      padding: 61px 0 0 0;
       overflow-x: auto;
 
       @media (max-width: 768px) {
