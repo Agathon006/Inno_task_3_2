@@ -3,19 +3,15 @@
 export default () => {
   const burgerButton = document.querySelector("#burger-btn");
   const elementsToHide = document.querySelectorAll("[data-hide]");
-  const notAsideWrapper = document.querySelector(".main__not-aside-wrapper");
+  const navSection = document.querySelector(".nav-section");
 
-  burgerButton.addEventListener("click", (e) => {
+  burgerButton.addEventListener("click", () => {
     elementsToHide.forEach((element) => {
-      if (element.style.display === "none") {
-        element.style.display = "block";
-        notAsideWrapper.style.width = "calc(100vw - 220px)";
-        notAsideWrapper.style.paddingLeft = "30px";
-      } else {
-        element.style.display = "none";
-        notAsideWrapper.style.width = "calc(100vw - 90px)";
-        notAsideWrapper.style.paddingLeft = "0px";
-      }
+      element.style.display =
+        element.style.display === "none" ? "block" : "none";
     });
+
+    navSection.style.paddingRight =
+      elementsToHide[0].style.display === "block" ? "30px" : "0";
   });
 };

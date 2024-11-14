@@ -936,6 +936,7 @@ button {
   flex-direction: column;
   width: calc(100vw - 220px);
   padding-left: 30px;
+  flex-grow: 1;
 }
 .main__not-aside-wrapper .main__main-channel-about {
   padding: 0 70px 0 0;
